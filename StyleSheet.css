@@ -1,0 +1,45 @@
+﻿body 
+{
+	margin:0 0 0 0;	
+}
+
+.Label
+{
+	font-family:Arial Sans-Serif ;
+	font-size:12pt;
+	font-weight:bold;
+	color:White;
+			
+}
+.TextBox
+{
+	font-family:Arial Sans-Serif;
+	font-size:8pt;
+    color:Black;
+    text-decoration:none;
+    font-weight:normal;
+    background-color:Yellow;
+	
+}
+.MainTable
+{
+	font-family:Arial Sans-Serif;
+	font-size:8pt;
+	color:Black;
+	font-weight:bold;
+	
+}
+
+.Button
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: Silver ;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #ff0066 ;
+	width: auto;	
+	height: 20;
+	cursor:hand;
+	
+}

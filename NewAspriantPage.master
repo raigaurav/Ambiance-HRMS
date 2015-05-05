@@ -1,0 +1,43 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NewAspriantPage.master.cs"
+    Inherits="New_Aspriant_NewAspriantPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head runat="server">
+    <title>Master page internal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <%--<link href="../New%20Aspriant/StyleSheet.css" rel="stylesheet" type="text/css" />--%>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="../Includes/validations.js"></script>
+    <script type="text/javascript" language="javascript" src="../Includes/validations_click.js"></script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <!-- ImageReady Slices (Master page internal.psd) -->
+    <form id="aspnetForm" runat="server">
+    <table width="1000" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <img src="Newimages/Master-page-internal_01.gif" width="1000" height="132" alt=""></td>
+        </tr>
+        <tr>
+            <td style="height: 829px">
+                <img src="Newimages/Master-page-internal_02.gif" width="1000" height="840" alt="">
+                <asp:Panel ID="Panel1" runat="server" Height="837px" Style="z-index: 100; left: 4px;
+                    position: absolute; top: 133px" Width="994px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:Panel>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Newimages/Master-page-internal_03.gif" width="1000" height="3" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Newimages/Master-page-internal_04.gif" width="1000" height="25" alt=""></td>
+        </tr>
+    </table>
+    </form>
+    <!-- End ImageReady Slices -->
+</body>
+</html>

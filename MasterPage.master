@@ -1,0 +1,122 @@
+﻿<%@  Master   Language="C#" AutoEventWireup="true" CodeFile= "~/MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+            
+        
+
+
+
+
+
+<html>
+<head runat="server">
+
+<title>Ambiance HRMS</title>
+   
+    <asp:ContentPlaceHolder ID="hh" runat="server">
+
+    </asp:ContentPlaceHolder>
+<link href="Style_Master.css" rel="stylesheet" type="text/css" />
+</head>
+<body><form runat="server">
+
+
+<!-- start header -->
+     <div id="header" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+   
+	<div id="menu" runat="server">
+    
+    <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Unnamed_Click" BackColor="#CCCCCC" Font-Bold="true" BorderStyle="None" ForeColor="Maroon" style="left:720px; right:85px;position:static"  />
+<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal"
+  staticsubmenuindent="50px" target="_blank"
+  Font-names="Verdana"
+  Width="16%" RenderingMode="Table" Height="80px" MaximumDynamicDisplayLevels="5"
+ 
+StaticEnableDefaultPopOutImage="False" 
+
+DynamicVerticalOffset="2" DynamicHorizontalOffset="2" DynamicItemFormatString="&nbsp;&nbsp;&nbsp;{0}&nbsp;&nbsp;&nbsp;&nbsp;" BackColor="#F7F6F3" Font-Size="0.8em" ForeColor="#7C6F57" DisappearAfter="100" style="z-index: 1; left: 183px; top: 16px; position: absolute; height: 80px; width: 819px"  >
+                <DynamicHoverStyle BackColor="#33CCFF"/>
+                <StaticHoverStyle CssClass="menu" BackColor="#51D3FF" />
+                <StaticMenuItemStyle CssClass="Menu3" BackColor="#66CCFF" VerticalPadding="3px" />
+
+<DynamicHoverStyle CssClass="MenuHover" BackColor="#CCFFFF" ForeColor="White" />
+ 
+<DynamicMenuItemStyle CssClass="Menu" HorizontalPadding="1px" VerticalPadding="2px" Width="30%" />
+ 
+                <DynamicMenuStyle BackColor="#3399FF"   Width="15%" Height="11%" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx" Target="" >
+                        <asp:MenuItem Text="Company Info" Value="Company Info" NavigateUrl="~/CompanyInfo.aspx" Target="&quot;&quot;"></asp:MenuItem>
+                    </asp:MenuItem>
+                                        <asp:MenuItem Text="Employees" Value="Employees">
+                        <asp:MenuItem Text="Employee List" Value="Employee List" NavigateUrl="~/Employee.aspx" Target=""></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/AddEmp.aspx" Target="" Text="Add Employee" Value="Add Employee"></asp:MenuItem>
+                    <asp:MenuItem Text="PayRole" Value="PayRole" NavigateUrl="~/Pay.aspx" Target=""></asp:MenuItem>
+                                        </asp:MenuItem>
+                    <asp:MenuItem Text="Leave" Value="Leave" NavigateUrl="~/Leave.aspx" Target=""></asp:MenuItem>
+                    <asp:MenuItem Text="About" Value="About" NavigateUrl="~/CompanyInfo.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Recruitment" Value="Recruitment">
+                        <asp:MenuItem Text="Resume" Value="Resume" NavigateUrl="~/NewAspriant.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Job Applications" Value="Job Applications" NavigateUrl="~/Showresume.aspx" Target=""></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Contact" NavigateUrl="~/Contact.aspx" Target="" Value="New Item"></asp:MenuItem>
+                </Items>
+                <LevelSubMenuStyles>
+                    <asp:SubMenuStyle Font-Underline="False" Width="10%" />
+                </LevelSubMenuStyles>
+ 
+<StaticHoverStyle CssClass="MenuHover" BackColor="#7C6F57" ForeColor="White" />
+ 
+                <StaticMenuItemStyle CssClass="Menu" VerticalPadding="2px" />
+     <StaticMenuItemStyle HorizontalPadding="42px" />
+ 
+                <StaticMenuStyle CssClass="menu2" Width="100%" />
+
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+
+            </asp:Menu>
+         
+	</div>
+         
+	<div id="logo" runat="server">
+		<h1><a href="#">Ambiance</a></h1>
+		<h2>HRMS</h2>
+	</div>
+</div>
+    
+<!-- end header -->
+<!-- start page -->
+<div id="page1" runat="server">
+	<!-- start content -->
+	
+        <div id="content" style="width:787px ; height:auto">
+		
+                   
+                <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1">
+               
+                
+                </asp:ContentPlaceHolder>
+
+          
+</div></div>
+    <!-- end content -->
+	
+    <!-- start sidebar -->
+
+	<div id="sidebar" runat="server">
+		
+	<div style="top:auto;bottom:auto"><p id="links"><a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 
+
+Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page 
+
+validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>
+        
+	</div>	
+
+	</div>
+	</form>
+
+</body>
+</html>
